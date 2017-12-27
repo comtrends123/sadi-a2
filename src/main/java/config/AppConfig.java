@@ -73,10 +73,9 @@ public class AppConfig {
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://bjzfoftjtedvur:783e9612518fad42ec290a2bd242f7ed416a0353ba79d48df421428252c58ab6@ec2-54-163-233-103.compute-1.amazonaws.com:5432/dcn1l6d5r9sgie
-");
-        dataSource.setUsername("bjzfoftjtedvur");
-        dataSource.setPassword("783e9612518fad42ec290a2bd242f7ed416a0353ba79d48df421428252c58ab6");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/postgres");
+        dataSource.setUsername("postgres");
+        dataSource.setPassword("tuan3112");
 
         sessionFactoryBean.setDataSource(dataSource);
         sessionFactoryBean.setHibernateProperties(properties);
